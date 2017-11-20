@@ -7,7 +7,7 @@ RUN apk add --no-cache curl && \
     https://github.com/openfaas-incubator/of-watchdog/releases/download/0.0.4/of-watchdog > /usr/bin/fwatchdog && \
     chmod +x /usr/bin/fwatchdog
 
-COPY ./function/openfaas-scala-afterburn-assembly-0.1.0-SNAPSHOT.jar /openfaas-scala-afterburn-assembly-0.1.0-SNAPSHOT.jar
+COPY ./function/app.jar /app.jar
 
 ENV fprocess="java -jar /app.jar"
 ENV afterburn=true

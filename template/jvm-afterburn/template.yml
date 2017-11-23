@@ -1,0 +1,2 @@
+language: jvm-afterburn
+fprocess: java -jar /app.jar
